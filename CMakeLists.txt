@@ -30,6 +30,11 @@ add_service_files(
 add_action_files(
   DIRECTORY action
   FILES
+  Record.action
+  Start.action
+  Stop.action
+  Subscribe.action
+  WatchdogHandleError.action
 )
 
 generate_messages(
