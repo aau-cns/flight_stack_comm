@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>flightstack_comm</name>
+  <version>0.1.0</version>
+  <description>
+    ROS1 messages for CNS Flight Stack communication
+  </description>
+
+  <maintainer email="martin.scheiber@aau.at">Roland Jung</maintainer>
+
+  <license>BSD-2-Clause-License with no commercial use allowed. No license in patents is granted.</license>
+
+  <author email="alessandro.fornasier@aau.at">Alessandro Fornasier</author>
+  <author email="christian.brommer@aau.at">Christian Brommer</author>
+  <author email="roland.jung@aau.at">Roland Jung</author>
+  <author email="martin.scheiber@aau.at">Martin Scheiber</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>actionlib_msgs</depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>message_runtime</exec_depend>
+</package>

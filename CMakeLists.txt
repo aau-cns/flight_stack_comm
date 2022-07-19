@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(flightstack_comm)
+
+find_package(catkin REQUIRED COMPONENTS actionlib_msgs message_generation std_msgs)
+
+add_message_files(
+  DIRECTORY msg
+  FILES
+  LogMessage.msg
+  MissionRequest.msg
+  MissionResponse.msg
+  MissionWaypoint.msg
+  MissionWaypointArray.msg
+  WatchdogAction.msg
+  WatchdogActionStamped.msg
+  WatchdogStatus.msg
+  WatchdogStatusStamped.msg
+  WatchdogStatusChangesArray.msg
+  WatchdogStatusChangesArrayStamped.msg
+)
+
+add_service_files(
+  DIRECTORY srv
+  FILES
+  GetStartPose.srv
+  Reset.srv
+  WatchdogStart.srv
+)
+
+add_action_files(
+  DIRECTORY action
+  FILES
+  Record.action
+  Start.action
+  Stop.action
+  Subscribe.action
+  WatchdogHandleError.action
+)
+
+generate_messages(
+  DEPENDENCIES actionlib_msgs std_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS actionlib_msgs message_runtime
+)
