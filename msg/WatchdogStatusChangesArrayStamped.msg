@@ -1,2 +1,2 @@
-Header                                      header
-flightstack_comm/WatchdogStatusChangesArray data
+Header                      header
+WatchdogStatusChangesArray  data

@@ -1,2 +1,2 @@
-Header                          header
-flightstack_comm/WatchdogStatus status
+Header          header
+WatchdogStatus  status

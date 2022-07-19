@@ -1,7 +1,7 @@
-Header                          header
-float64                         startup_time
+Header          header
+float64         startup_time
 ---
-Header                          header
-bool                            successful
-WatchdogStatus status
-string[]                        entity_ids
+Header          header
+bool            successful
+WatchdogStatus  status
+string[]        entity_ids
