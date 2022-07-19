@@ -6,6 +6,17 @@ find_package(catkin REQUIRED COMPONENTS actionlib_msgs message_generation std_ms
 add_message_files(
   DIRECTORY msg
   FILES
+  LogMessage.msg
+  MissionRequest.msg
+  MissionResponse.msg
+  MissionWaypoint.msg
+  MissionWaypointArray.msg
+  WatchdogAction.msg
+  WatchdogActionStamped.msg
+  WatchdogStatus.msg
+  WatchdogStatusStamped.msg
+  WatchdogStatusChangesArray.msg
+  WatchdogStatusChangesArrayStamped.msg
 )
 
 add_service_files(
