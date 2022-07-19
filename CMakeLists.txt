@@ -22,6 +22,9 @@ add_message_files(
 add_service_files(
   DIRECTORY srv
   FILES
+  GetStartPose.srv
+  Reset.srv
+  WatchdogStart.srv
 )
 
 add_action_files(
